@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://emptycat.com/"/>
-  <updated>2016-07-29T17:23:54.031Z</updated>
+  <updated>2016-07-29T17:29:06.088Z</updated>
   <id>http://emptycat.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://emptycat.com/2016/07/29/%E6%B5%8B%E8%AF%95/"/>
     <id>http://emptycat.com/2016/07/29/测试/</id>
     <published>2016-07-29T10:11:54.000Z</published>
-    <updated>2016-07-29T17:23:54.031Z</updated>
+    <updated>2016-07-29T17:29:06.088Z</updated>
     
     <content type="html"><![CDATA[<p>你好<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure></p>
 <p>这是一个普通段落。</p>
@@ -38,7 +38,9 @@
       <category term="IT" scheme="http://emptycat.com/categories/IT/"/>
     
     
-      <category term="-test -IT" scheme="http://emptycat.com/tags/test-IT/"/>
+      <category term="tag1" scheme="http://emptycat.com/tags/tag1/"/>
+    
+      <category term="tag2" scheme="http://emptycat.com/tags/tag2/"/>
     
   </entry>
   
