@@ -27,7 +27,11 @@
     <entry>
       <title><![CDATA[测试]]></title>
       <url>http://emptycat.com/2016/07/29/%E6%B5%8B%E8%AF%95/</url>
-      <content type="html"></content>
+      <content type="html"><![CDATA[<p>这是一个普通段落。</p>
+<table><br>    <tr><br>        <td>Foo</td><br>    </tr><br></table>
+
+<p>这是另一个普通段落。</p>
+]]></content>
     </entry>
     
   

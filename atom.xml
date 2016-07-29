@@ -65,9 +65,21 @@
     <link href="http://emptycat.com/2016/07/29/%E6%B5%8B%E8%AF%95/"/>
     <id>http://emptycat.com/2016/07/29/测试/</id>
     <published>2016-07-29T10:11:54.000Z</published>
-    <updated>2016-07-29T10:11:54.108Z</updated>
+    <updated>2016-07-29T15:56:47.826Z</updated>
+    
+    <content type="html"><![CDATA[<p>这是一个普通段落。</p>
+<table><br>    <tr><br>        <td>Foo</td><br>    </tr><br></table>
+
+<p>这是另一个普通段落。</p>
+]]></content>
     
     <summary type="html">
+    
+      &lt;p&gt;这是一个普通段落。&lt;/p&gt;
+&lt;table&gt;&lt;br&gt;    &lt;tr&gt;&lt;br&gt;        &lt;td&gt;Foo&lt;/td&gt;&lt;br&gt;    &lt;/tr&gt;&lt;br&gt;&lt;/table&gt;
+
+&lt;p&gt;这是另一个普通段落。&lt;/p&gt;
+
     
     </summary>
     
