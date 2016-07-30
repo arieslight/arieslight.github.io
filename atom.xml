@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://emptycat.com/"/>
-  <updated>2016-07-30T14:31:51.113Z</updated>
+  <updated>2016-07-30T14:38:06.370Z</updated>
   <id>http://emptycat.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://emptycat.com/2016/07/30/openwrt%E3%80%901%E3%80%91/"/>
     <id>http://emptycat.com/2016/07/30/openwrt【1】/</id>
     <published>2016-07-30T11:17:21.000Z</published>
-    <updated>2016-07-30T14:31:51.113Z</updated>
+    <updated>2016-07-30T14:38:06.370Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。</p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2><p>1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单</p>
@@ -44,7 +44,8 @@
 <h2 id="保存后退出"><a href="#保存后退出" class="headerlink" title="保存后退出"></a>保存后退出</h2><p>Save后一步步走然后退出</p>
 <h1 id="写在编译前，修改flash闪存容量"><a href="#写在编译前，修改flash闪存容量" class="headerlink" title="写在编译前，修改flash闪存容量"></a>写在编译前，修改flash闪存容量</h1><p>wndr4300是128MBflash闪存的配置若用官方的固件包刷就只有13MB可用，原因是官方在编译的时候限制了闪存容量。当下我们自己编译固件则可以充分发挥性能，方便日后安装更多的程序拓展op的功能。修改的方法如下：<br>进入源码文件openwrt目录下，然后修改配置文件</p>
 <figure class="highlight plain"><figcaption><span>先备份再用vim修改编译文件</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cp ./target/linux/ar71xx/image/Makefile ./target/linux/ar71xx/image/Makefile.bak</div><div class="line">vim ./target/linux/ar71xx/image/Makefile</div></pre></td></tr></table></figure>
-<p>将<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),<br><strong>23552k(ubi),25600k@0x6c0000(firmware)</strong>,256k(caldata_backup),-(reserved)<br>改为（将ubi和firmware增加96M，完全使用128M flash）<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),<br><strong>121856k(ubi),123904k@0x6c0000(firmware)</strong>,256k(caldata_backup),-(reserved)</p>]]></content>
+<p>将<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),<br><strong>23552k(ubi),25600k@0x6c0000(firmware)</strong>,256k(caldata_backup),-(reserved)<br>改为（将ubi和firmware增加96M，完全使用128M flash）<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),<br><strong>121856k(ubi),123904k@0x6c0000(firmware)</strong>,256k(caldata_backup),-(reserved)</p>
+<h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plain"><figcaption><span>执行命令编译固件make就可以了加V=99是为了显示具体信息</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make V=99</div></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
