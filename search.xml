@@ -4,9 +4,23 @@
   
     
     <entry>
+      <title><![CDATA[测试3]]></title>
+      <url>http://emptycat.com/2016/07/30/%E6%B5%8B%E8%AF%953/</url>
+      <content type="html"></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[测试2]]></title>
+      <url>http://emptycat.com/2016/07/30/%E6%B5%8B%E8%AF%952/</url>
+      <content type="html"><![CDATA[<p>q<br>q<br>q<br>q<br>q<br>q<br>q<br><a id="more"></a><br>q<br>qqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqq<br>qqqqqq</p>
+<p>qqqqqqq<br>qqqqqqq</p>
+<p>qqqqqqq<br>qqqqqqq<br>qqqqqqq<br>qqqqqq</p>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[HelloWord（测试）]]></title>
       <url>http://emptycat.com/2016/07/29/HELLOWORD/</url>
-      <content type="html"><![CDATA[<p>你好世界<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure></p>
+      <content type="html"><![CDATA[<p>你好世界<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">alert(&apos;Hello World!&apos;);</div></pre></td></tr></table></figure><br><a id="more"></a></p>
 <p><table><br>    <tr><br>        <td>Foolish</td><br>    </tr><br></table></p>
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=34586882&auto=1&height=66"></iframe>]]></content>
     </entry>
