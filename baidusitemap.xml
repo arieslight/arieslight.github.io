@@ -4,8 +4,28 @@
 
     
   <url>
+    <loc>http://emptycat.com/2016/07/30/show/</loc>
+    <lastmod>2016-07-30T11:00:55.826Z</lastmod>
+    <data>
+        <display>
+        <title>show</title>
+        <pubTime>2016-07-30T10:27:43.000Z</pubTime>
+        
+        <tag>硬件</tag>
+         
+         
+           
+             
+              <breadCrumb title="晒照片" url="http://emptycat.com/categories/%E6%99%92%E7%85%A7%E7%89%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://emptycat.com/2016/07/29/HELLOWORD/</loc>
-    <lastmod>2016-07-30T02:15:47.587Z</lastmod>
+    <lastmod>2016-07-30T10:26:10.396Z</lastmod>
     <data>
         <display>
         <title>HelloWord（测试）</title>
@@ -20,36 +40,6 @@
              
               <breadCrumb title="IT" url="http://emptycat.com/categories/IT/"/>
           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://emptycat.com/2016/07/30/%E6%B5%8B%E8%AF%952/</loc>
-    <lastmod>2016-07-30T02:14:40.709Z</lastmod>
-    <data>
-        <display>
-        <title>测试2</title>
-        <pubTime>2016-07-30T02:09:47.000Z</pubTime>
-        
-         
-           
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://emptycat.com/2016/07/30/%E6%B5%8B%E8%AF%953/</loc>
-    <lastmod>2016-07-30T02:11:51.419Z</lastmod>
-    <data>
-        <display>
-        <title>测试3</title>
-        <pubTime>2016-07-30T02:11:51.000Z</pubTime>
-        
-         
-           
         </display>
     </data>
     </url>
