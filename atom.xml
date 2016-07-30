@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://emptycat.com/"/>
-  <updated>2016-07-30T14:53:39.979Z</updated>
+  <updated>2016-07-30T14:57:12.735Z</updated>
   <id>http://emptycat.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://emptycat.com/2016/07/30/openwrt%E3%80%901%E3%80%91/"/>
     <id>http://emptycat.com/2016/07/30/openwrt【1】/</id>
     <published>2016-07-30T11:17:21.000Z</published>
-    <updated>2016-07-30T14:53:39.979Z</updated>
+    <updated>2016-07-30T14:57:12.735Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。</p>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2><p>1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单</p>
