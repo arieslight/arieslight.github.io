@@ -32,7 +32,9 @@
 <h1 id="编译"><a href="#编译" class="headerlink" title="编译"></a>编译</h1><figure class="highlight plain"><figcaption><span>执行命令编译固件make就可以了加V=99是为了显示具体信息</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">make V=99</div></pre></td></tr></table></figure>
 <p>然后是漫长的等待，取决于你机器的性能和网速。真机估计要两个小时左右，我笔记本的配置应该说算是很高了，在虚拟机里编译了4个多小时</p>
 <p>编译好的文件在你openwrt目录下的bin目录下，以ubi-factory.img结尾的是固件sysupgrade.tar结尾的是升级包</p>
-<h1 id="END"><a href="#END" class="headerlink" title="END"></a>END</h1><p>最后奉上博主编译的固件有网件wndr4300v1 或 wndr3700v4路由器的可以下载下来使用，<br>编译的固件超纯净版，较最小包只有如下两处改动<br>1.将存储空间增加到128M<br>2.添加中文LuCI<br>wndr3700v4链接：<a href="http://pan.baidu.com/s/1bJIDFw" target="_blank" rel="external">http://pan.baidu.com/s/1bJIDFw</a> 密码：kb1z<br>wndr4300v1链接：<a href="http://pan.baidu.com/s/1eSJkLP4" target="_blank" rel="external">http://pan.baidu.com/s/1eSJkLP4</a> 密码：sors</p>]]></content>
+<h1 id="END"><a href="#END" class="headerlink" title="END"></a>END</h1><p>最后奉上博主编译的固件有网件wndr4300v1 或 wndr3700v4路由器的可以下载下来使用，<br>编译的固件超纯净版，较最小包只有如下两处改动<br>1.将存储空间增加到128M<br>2.添加中文LuCI<br>wndr3700v4链接：<a href="http://pan.baidu.com/s/1bJIDFw" target="_blank" rel="external">http://pan.baidu.com/s/1bJIDFw</a> 密码：kb1z<br>wndr4300v1链接：<a href="http://pan.baidu.com/s/1eSJkLP4" target="_blank" rel="external">http://pan.baidu.com/s/1eSJkLP4</a> 密码：sors</p>
+<p><hr></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=405681663&auto=1&height=66"></iframe>]]></content>
     </entry>
     
     <entry>
