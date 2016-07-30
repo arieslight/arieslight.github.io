@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+
+    
+    
+  <url>
+    <loc>http://emptycat.com/2016/07/29/HELLOWORD/</loc>
+    <lastmod>2016-07-29T17:40:35.035Z</lastmod>
+    <data>
+        <display>
+        <title>HelloWord（测试）</title>
+        <pubTime>2016-07-29T10:11:54.000Z</pubTime>
+        
+        <tag>TEST</tag>
+         
+        <tag>IT</tag>
+         
+         
+           
+             
+              <breadCrumb title="IT" url="http://emptycat.com/categories/IT/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
+</urlset>
