@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="LACIE,INTUOS pro,Lexar">
+  <meta name="keywords" content="openwrt,netgear wndr4300,编译固件,改flash容量">
 
 
 
@@ -86,18 +86,32 @@
 
 
 
-<meta name="description" content="晒几件最近买的硬件">
+<meta name="description" content="前言最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。
+准备工作设备1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单
+支持设备清单openwrtSupported Devices
+2.一台windows操作系统或者linux系统（其实OS X也可以，主要unix和类unix系统博主没啥研究）的计算机">
 <meta property="og:type" content="article">
-<meta property="og:title" content="试用期工资基本败光了">
-<meta property="og:url" content="http://emptycat.com/2016/07/30/show/index.html">
+<meta property="og:title" content="初识openwrt【1】编译自己专属的固件">
+<meta property="og:url" content="http://emptycat.com/2016/07/30/openwrt【1】/index.html">
 <meta property="og:site_name" content="扇子先生's Blog">
-<meta property="og:description" content="晒几件最近买的硬件">
-<meta property="og:image" content="http://emptycat.com/images/160730.jpg">
-<meta property="og:updated_time" content="2016-07-30T11:12:02.682Z">
+<meta property="og:description" content="前言最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。
+准备工作设备1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单
+支持设备清单openwrtSupported Devices
+2.一台windows操作系统或者linux系统（其实OS X也可以，主要unix和类unix系统博主没啥研究）的计算机">
+<meta property="og:image" content="http://emptycat.com/images/op.ong">
+<meta property="og:image" content="http://emptycat.com/images/1.png">
+<meta property="og:image" content="http://emptycat.com/images/2.png">
+<meta property="og:image" content="http://emptycat.com/images/3.png">
+<meta property="og:image" content="http://emptycat.com/images/4.png">
+<meta property="og:image" content="http://emptycat.com/images/5.png">
+<meta property="og:updated_time" content="2016-07-30T14:26:59.719Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="试用期工资基本败光了">
-<meta name="twitter:description" content="晒几件最近买的硬件">
-<meta name="twitter:image" content="http://emptycat.com/images/160730.jpg">
+<meta name="twitter:title" content="初识openwrt【1】编译自己专属的固件">
+<meta name="twitter:description" content="前言最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。
+准备工作设备1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单
+支持设备清单openwrtSupported Devices
+2.一台windows操作系统或者linux系统（其实OS X也可以，主要unix和类unix系统博主没啥研究）的计算机">
+<meta name="twitter:image" content="http://emptycat.com/images/op.ong">
 
 
 
@@ -118,9 +132,9 @@
 
 
 
-  <link rel="canonical" href="http://emptycat.com/2016/07/30/show/">
+  <link rel="canonical" href="http://emptycat.com/2016/07/30/openwrt【1】/">
 
-  <title> 试用期工资基本败光了 | 扇子先生's Blog </title>
+  <title> 初识openwrt【1】编译自己专属的固件 | 扇子先生's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -300,7 +314,7 @@
             
             
               
-                试用期工资基本败光了
+                初识openwrt【1】编译自己专属的固件
               
             
           </h1>
@@ -312,7 +326,7 @@
               <i class="fa fa-calendar-o"></i>
             </span>
             <span class="post-meta-item-text">发表于</span>
-            <time itemprop="dateCreated" datetime="2016-07-30T18:27:43+08:00" content="2016-07-30">
+            <time itemprop="dateCreated" datetime="2016-07-30T19:17:21+08:00" content="2016-07-30">
               2016-07-30
             </time>
           </span>
@@ -326,8 +340,8 @@
               <span class="post-meta-item-text">分类于</span>
               
                 <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
-                  <a href="/categories/晒照片/" itemprop="url" rel="index">
-                    <span itemprop="name">晒照片</span>
+                  <a href="/categories/嵌入式Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">嵌入式Linux</span>
                   </a>
                 </span>
 
@@ -342,8 +356,8 @@
             
               <span class="post-comments-count">
                 &nbsp; | &nbsp;
-                <a href="/2016/07/30/show/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/30/show/" itemprop="commentsCount"></span>
+                <a href="/2016/07/30/openwrt【1】/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/07/30/openwrt【1】/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -353,7 +367,7 @@
 
           
           
-             <span id="/2016/07/30/show/" class="leancloud_visitors" data-flag-title="试用期工资基本败光了">
+             <span id="/2016/07/30/openwrt【1】/" class="leancloud_visitors" data-flag-title="初识openwrt【1】编译自己专属的固件">
                &nbsp; | &nbsp;
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -375,13 +389,29 @@
       
 
       
-        <h1 id="晒几件最近买的硬件"><a href="#晒几件最近买的硬件" class="headerlink" title="晒几件最近买的硬件"></a>晒几件最近买的硬件</h1><hr>
-
-<p><img src="/images/160730.jpg" alt=""></p>
-<a id="more"></a>
-<h2 id="莱斯的移动硬盘"><a href="#莱斯的移动硬盘" class="headerlink" title="莱斯的移动硬盘"></a>莱斯的移动硬盘</h2><p>容量1TB，莱斯早就被希捷收购了，所以毫无疑问是希捷的芯。特点是质量好，抗摔、抗震、短暂防水，苹果外设认证，红点设计奖外观赞，还有贵~~</p>
-<h2 id="雷克萨的U盘"><a href="#雷克萨的U盘" class="headerlink" title="雷克萨的U盘"></a>雷克萨的U盘</h2><p>镁光旗下品牌，128GB,MLC颗粒的闪存，群联的主控。特点：快！！！（吐槽一下，前代P10是信仰级的SLC，这代P20变镁光自家的MLC了。虽然不是廉价的TLC，但信仰减半。另外国内正规电商目前只有64G版，且64G的卖的竟然比美亚128G的还贵！！！果断海淘）</p>
-<h2 id="影拓的数位板"><a href="#影拓的数位板" class="headerlink" title="影拓的数位板"></a>影拓的数位板</h2><p>intuos pro 小板，2048级压感，60度倾斜感应，冲动型消费。什么都不说了，教练我想学画画。</p>
+        <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2><p>1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单</p>
+<blockquote><p>支持设备清单</p><footer><strong>openwrt</strong><cite><a href="http://wiki.openwrt.org/toh/start" target="_blank" rel="external">Supported Devices</a></cite></footer></blockquote>
+<p>2.一台windows操作系统或者linux系统（其实OS X也可以，主要unix和类unix系统博主没啥研究）的计算机</p>
+<h2 id="Linux操作系统"><a href="#Linux操作系统" class="headerlink" title="Linux操作系统"></a>Linux操作系统</h2><p>若计算机用的是linux操作系统，则跳过Linux操作系统这一小结。<br>对于使用windows操作系统的用户来说，因为openwrt的本质是嵌入式linux系统，所以编译环境要求是linux。</p>
+<p></p><h3>解决办法</h3><br>安装虚拟机，如vmware。然后在虚拟机上安装linux操作系统，OVER。<p></p>
+<h1 id="部署编译环境"><a href="#部署编译环境" class="headerlink" title="部署编译环境"></a>部署编译环境</h1><p><strong>写给linux新手的话</strong>（其实我也是新手）：本文以linux的一个发行版本centos为例，官网上有安装包的命令，但多数是适用于Ubuntu等Debian系列。本文适用redhat系列的linux发行版本。（说白了就是软件包管理命令不一样，一个是yum一个是apt-get）</p>
+<p>以非root用户来完成接下来的工作<br><figure class="highlight plain"><figcaption><span>安装git以下载openwrt源码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">sudo yum install update</div><div class="line">sudo yum install git-core</div></pre></td></tr></table></figure></p>
+<figure class="highlight plain"><figcaption><span>feeds中部分软件包可能只能通过svn或mercurial需要用那些包的应当安装svn和mercurial(本文情况可以不用)</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install subversion mercurial</div></pre></td></tr></table></figure>
+<figure class="highlight plain"><figcaption><span>获取安装所需软件包，以centos为例</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">sudo yum install subversion binutils bzip2 gcc gcc-c++ gawk gettext flex ncurses-devel zlib-devel make patch unzip perl-ExtUtils-MakeMaker  glibc glibc-devel glibc-static quilt ncurses-lib sed sdcc intltool sharutils bison wget git-core openssl-devel xz</div></pre></td></tr></table></figure>
+<p>下载源码本文用的是最新的稳定版本Chaos Calmer15.05分支，混沌平静者？老外这个名字起的有点6<br><figure class="highlight plain"><figcaption><span>通过git下载openwrt源码</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">git clone git://git.openwrt.org/15.05/openwrt.git</div></pre></td></tr></table></figure></p>
+<p>打开下载的包 linux中是命令cd /XXX之类的命令 change directory的意思<br><figure class="highlight plain"><figcaption><span>下载并安装所有可用的feeds(可选，建议执行方便日后深入研究)</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">cd openwrt</div><div class="line">./scripts/feeds update -a</div><div class="line">./scripts/feeds install -a</div></pre></td></tr></table></figure><br><figure class="highlight plain"><figcaption><span>运行下面的命令让OpenWrt编译系统检查你的编译环境中缺失的软件包</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">make defconfig</div><div class="line">make prereq</div><div class="line">make menuconfig</div></pre></td></tr></table></figure></p>
+<p>到这步无误的话就直接进入编译设置了，make menuconfig就是打开选项设置的，图形用户界面哦，对新手来说是不是很亲切。其实也可以不用图像用户界面，配置一个config文件就可以了，但本文是新手向教学所以就不赘述了，感兴趣的移步官方说明。<br><blockquote><p>官方编译说明</p><footer><strong>openwrt</strong><cite><a href="https://wiki.openwrt.org/doc/howto/build" target="_blank" rel="external">build system</a></cite></footer></blockquote></p>
+<h1 id="配置编译选项，选择目标硬件平台和要包含的软件包"><a href="#配置编译选项，选择目标硬件平台和要包含的软件包" class="headerlink" title="配置编译选项，选择目标硬件平台和要包含的软件包"></a>配置编译选项，选择目标硬件平台和要包含的软件包</h1><p>如下图所示图形用户界面</p>
+<p><img src="/images/op.ong" alt=""><br>本文以wndr4300 v1为例<br>选择目标平台:</p>
+<h2 id="cpu芯片组系列"><a href="#cpu芯片组系列" class="headerlink" title="cpu芯片组系列"></a>cpu芯片组系列</h2><p>选择Target System进入，如下图所示：<br>选择你硬件的cpu芯片系列<br><img src="/images/1.png" alt=""></p>
+<h2 id="存储设备规格"><a href="#存储设备规格" class="headerlink" title="存储设备规格"></a>存储设备规格</h2><p>选择Subtarget<br>选择你硬件的闪存规格<br><img src="/images/2.png" alt=""></p>
+<h2 id="硬件对应的配置文件"><a href="#硬件对应的配置文件" class="headerlink" title="硬件对应的配置文件"></a>硬件对应的配置文件</h2><p>选择Target profile<br>选择你的设备型号<br><img src="/images/3.png" alt=""></p>
+<h2 id="选择你要包含的软件包"><a href="#选择你要包含的软件包" class="headerlink" title="选择你要包含的软件包"></a>选择你要包含的软件包</h2><p>此处以Luci为例，Luci是一个可视化的op管理程序，使一般普通用户直接通过浏览器来设置路由器，而不是通过linux 命令行。<br>选择LuCI–Collections<br>使用*选择luci 与 luci-ssl<br><img src="/images/4.png" alt=""><br>选择Luci–Modules—&gt;Translatons—&gt;Chinese(zh-cn)添加简体中文语言包<br><img src="/images/5.png" alt=""></p>
+<h2 id="保存后退出"><a href="#保存后退出" class="headerlink" title="保存后退出"></a>保存后退出</h2><p>Save后一步步走然后退出</p>
+<h1 id="写在编译前，修改flash闪存容量"><a href="#写在编译前，修改flash闪存容量" class="headerlink" title="写在编译前，修改flash闪存容量"></a>写在编译前，修改flash闪存容量</h1><p>wndr4300是128MBflash闪存的配置若用官方的固件包刷就只有13MB可用，原因是官方在编译的时候限制了闪存容量。当下我们自己编译固件则可以充分发挥性能，方便日后安装更多的程序拓展op的功能。修改的方法如下：<br>进入源码文件openwrt目录下，然后修改配置文件</p>
+<figure class="highlight plain"><figcaption><span>先备份再用vim修改编译文件</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">cp ./target/linux/ar71xx/image/Makefile ./target/linux/ar71xx/image/Makefile.bak</div><div class="line">vim ./target/linux/ar71xx/image/Makefile</div></pre></td></tr></table></figure>
+<p>将<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),<strong>23552k(ubi),25600k@0x6c0000(firmware)</strong>,256k(caldata_backup),-(reserved)<br>改为（将ubi和firmware增加96M，完全使用128M flash）<br>wndr4300_mtdlayout=mtdparts=ar934x-nfc:256k(u-boot)ro,256k(u-boot-env)ro,256k(caldata),512k(pot),2048k(language),512k(config),3072k(traffic_meter),2048k(kernel),121856k(ubi),123904k@0x6c0000(firmware),256k(caldata_backup),-(reserved)</p>
       
     </div>
 
@@ -424,7 +454,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/硬件/" rel="tag">#硬件</a>
+            <a href="/tags/openwrt/" rel="tag">#openwrt</a>
+          
+            <a href="/tags/编译固件/" rel="tag">#编译固件</a>
           
         </div>
       
@@ -433,17 +465,13 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2016/07/29/HELLOWORD/" rel="next" title="HelloWord（测试）">
-                <i class="fa fa-chevron-left"></i> HelloWord（测试）
+              <a href="/2016/07/30/show/" rel="next" title="试用期工资基本败光了">
+                <i class="fa fa-chevron-left"></i> 试用期工资基本败光了
               </a>
             
           </div>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2016/07/30/openwrt【1】/" rel="prev" title="初识openwrt【1】编译自己专属的固件">
-                初识openwrt【1】编译自己专属的固件 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -458,7 +486,7 @@
 
     <div class="post-spread">
       
-        <div class="ds-share flat" data-thread-key="2016/07/30/show/" data-title="试用期工资基本败光了" data-content="" data-url="http://emptycat.com/2016/07/30/show/">
+        <div class="ds-share flat" data-thread-key="2016/07/30/openwrt【1】/" data-title="初识openwrt【1】编译自己专属的固件" data-content="" data-url="http://emptycat.com/2016/07/30/openwrt【1】/">
   <div class="ds-share-inline">
     <ul class="ds-share-icons-16">
 
@@ -485,7 +513,7 @@
           
   <div class="comments" id="comments">
     
-      <div class="ds-thread" data-thread-key="2016/07/30/show/" data-title="试用期工资基本败光了" data-url="http://emptycat.com/2016/07/30/show/">
+      <div class="ds-thread" data-thread-key="2016/07/30/openwrt【1】/" data-title="初识openwrt【1】编译自己专属的固件" data-url="http://emptycat.com/2016/07/30/openwrt【1】/">
       </div>
     
   </div>
@@ -601,7 +629,7 @@
               
             
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#晒几件最近买的硬件"><span class="nav-number">1.</span> <span class="nav-text">晒几件最近买的硬件</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#莱斯的移动硬盘"><span class="nav-number">1.1.</span> <span class="nav-text">莱斯的移动硬盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#雷克萨的U盘"><span class="nav-number">1.2.</span> <span class="nav-text">雷克萨的U盘</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#影拓的数位板"><span class="nav-number">1.3.</span> <span class="nav-text">影拓的数位板</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前言"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#设备"><span class="nav-number">2.1.</span> <span class="nav-text">设备</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Linux操作系统"><span class="nav-number">2.2.</span> <span class="nav-text">Linux操作系统</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#undefined"><span class="nav-number">2.2.1.</span> <span class="nav-text">解决办法</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#部署编译环境"><span class="nav-number">3.</span> <span class="nav-text">部署编译环境</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#配置编译选项，选择目标硬件平台和要包含的软件包"><span class="nav-number">4.</span> <span class="nav-text">配置编译选项，选择目标硬件平台和要包含的软件包</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#cpu芯片组系列"><span class="nav-number">4.1.</span> <span class="nav-text">cpu芯片组系列</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#存储设备规格"><span class="nav-number">4.2.</span> <span class="nav-text">存储设备规格</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#硬件对应的配置文件"><span class="nav-number">4.3.</span> <span class="nav-text">硬件对应的配置文件</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#选择你要包含的软件包"><span class="nav-number">4.4.</span> <span class="nav-text">选择你要包含的软件包</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#保存后退出"><span class="nav-number">4.5.</span> <span class="nav-text">保存后退出</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#写在编译前，修改flash闪存容量"><span class="nav-number">5.</span> <span class="nav-text">写在编译前，修改flash闪存容量</span></a></li></ol></div>
             
           </div>
         </section>
