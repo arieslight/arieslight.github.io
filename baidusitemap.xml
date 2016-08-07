@@ -4,6 +4,26 @@
 
     
   <url>
+    <loc>http://emptycat.com/2016/07/30/show/</loc>
+    <lastmod>2016-08-07T07:25:33.184Z</lastmod>
+    <data>
+        <display>
+        <title>试用期工资基本败光了</title>
+        <pubTime>2016-07-30T10:27:43.000Z</pubTime>
+        
+        <tag>硬件</tag>
+         
+         
+           
+             
+              <breadCrumb title="晒照片" url="http://emptycat.com/categories/%E6%99%92%E7%85%A7%E7%89%87/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>http://emptycat.com/2016/07/30/openwrt%E3%80%901%E3%80%91/</loc>
     <lastmod>2016-07-30T15:43:09.362Z</lastmod>
     <data>
@@ -19,26 +39,6 @@
            
              
               <breadCrumb title="嵌入式Linux" url="http://emptycat.com/categories/%E5%B5%8C%E5%85%A5%E5%BC%8FLinux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>http://emptycat.com/2016/07/30/show/</loc>
-    <lastmod>2016-07-30T11:12:02.682Z</lastmod>
-    <data>
-        <display>
-        <title>试用期工资基本败光了</title>
-        <pubTime>2016-07-30T10:27:43.000Z</pubTime>
-        
-        <tag>硬件</tag>
-         
-         
-           
-             
-              <breadCrumb title="晒照片" url="http://emptycat.com/categories/%E6%99%92%E7%85%A7%E7%89%87/"/>
           
         </display>
     </data>
