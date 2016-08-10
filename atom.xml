@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://emptycat.com/"/>
-  <updated>2016-07-30T15:43:09.362Z</updated>
+  <updated>2016-08-10T17:42:31.510Z</updated>
   <id>http://emptycat.com/</id>
   
   <author>
@@ -16,13 +16,49 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>Hexo搭建专属博客（1）--hexo简介</title>
+    <link href="http://emptycat.com/2016/08/11/Hexo%E6%90%AD%E5%BB%BA%E4%B8%93%E5%B1%9E%E5%8D%9A%E5%AE%A2%EF%BC%881%EF%BC%89-hexo%E7%AE%80%E4%BB%8B/"/>
+    <id>http://emptycat.com/2016/08/11/Hexo搭建专属博客（1）-hexo简介/</id>
+    <published>2016-08-10T17:03:04.000Z</published>
+    <updated>2016-08-10T17:42:31.510Z</updated>
+    
+    <content type="html"><![CDATA[<p><hr></p>
+<h1 id="什么时Hexo"><a href="#什么时Hexo" class="headerlink" title="什么时Hexo?"></a>什么时Hexo?</h1><p>Hexo是Node.js驱动的快速高效简洁的开源博客框架。作者是台湾大学生<a href="https://github.com/hexojs/hexo" target="_blank" rel="external">tommy351</a> 。</p>
+<h1 id="Hexo-的特点"><a href="#Hexo-的特点" class="headerlink" title="Hexo 的特点"></a>Hexo 的特点</h1><h2 id="超快速度"><a href="#超快速度" class="headerlink" title="超快速度"></a>超快速度</h2><p>Node.js 所带来的超快生成速度，让上百个页面在几秒内瞬间完成渲染。</p>
+<h2 id="支持-Markdown"><a href="#支持-Markdown" class="headerlink" title="支持 Markdown"></a>支持 Markdown</h2><p>Hexo 支持 GitHub Flavored Markdown 的所有功能，甚至可以整合 Octopress 的大多数插件。</p>
+<h2 id="一键部署"><a href="#一键部署" class="headerlink" title="一键部署"></a>一键部署</h2><p>只需一条指令即可部署到 GitHub Pages, Heroku 或其他网站。</p>
+<h2 id="丰富的插件"><a href="#丰富的插件" class="headerlink" title="丰富的插件"></a>丰富的插件</h2><p>Hexo 拥有强大的插件系统，安装插件可以让 Hexo 支持 Jade, CoffeeScript。</p>
+<h1 id="扇子先生的使用心得（其实是闲聊那）"><a href="#扇子先生的使用心得（其实是闲聊那）" class="headerlink" title="扇子先生的使用心得（其实是闲聊那）"></a>扇子先生的使用心得（其实是闲聊那）</h1><p>米娜桑，好久不见。今天出差刚回来就来更一篇博客是不是很感动啊！！！哈哈哈，其实并没有人看。上次说了openwrt，博主是一个坑没填完就又开了另一个坑了。<br>各位放心，之前说的openwrt固件如何刷入路由器肯定是会更新的。面包会有的爱情也是会有的，所以博客那更是会有的那。咳咳，扯远了回归正题吧。<br>新开一坑教教大家如何搭建自己的专属博客，当然框架用的是Hexo,至于为什么了？因为博主的博客就是Hexo搭建的啊混蛋。<br>Hexo嘛，其实我就是个新手拿。markdown标记语言写博客是不是很炫酷那（其实并没有），讲真用习惯了也还好而且Markdown本身支持内置html,也就是说理论上只会写html就能用Markdown写出很多博客样式出来。<br>搭建环境也很简单，这周末教大家如何搭建与部署到github，有域名的还可以像博主一样用自己的域名哦。<br>因为博主本身就是个计算机菜鸟，非科班出生，一切都是自己玩出来的。所以技术型博客大多是新手教学项的那，目前暂定环境为windows。有想看linux的也可以，但你如果属于是想看linux的那还用来看博主的博客嘛混蛋。<br>以后还会更很多乱七八糟的非技术型博客，因为毕竟博主是Master嘛。<br>顺道说一下哈，博主的偶像久远的是老庄杨朱与亚里士多德，新点的是达芬奇。所以，有大触收徒教画画嘛~~</p>
+<p><hr></p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=409654891&auto=1&height=66"></iframe>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;&lt;hr&gt;&lt;/p&gt;
+&lt;h1 id=&quot;什么时Hexo&quot;&gt;&lt;a href=&quot;#什么时Hexo&quot; class=&quot;headerlink&quot; title=&quot;什么时Hexo?&quot;&gt;&lt;/a&gt;什么时Hexo?&lt;/h1&gt;&lt;p&gt;Hexo是Node.js驱动的快速高效简洁的开源博客框架。作者是台湾大学
+    
+    </summary>
+    
+      <category term="Hexo" scheme="http://emptycat.com/categories/Hexo/"/>
+    
+    
+      <category term="IT" scheme="http://emptycat.com/tags/IT/"/>
+    
+      <category term="Hexo" scheme="http://emptycat.com/tags/Hexo/"/>
+    
+      <category term="blog" scheme="http://emptycat.com/tags/blog/"/>
+    
+  </entry>
+  
+  <entry>
     <title>初识openwrt【1】编译自己专属的固件</title>
     <link href="http://emptycat.com/2016/07/30/openwrt%E3%80%901%E3%80%91/"/>
     <id>http://emptycat.com/2016/07/30/openwrt【1】/</id>
     <published>2016-07-30T11:17:21.000Z</published>
-    <updated>2016-07-30T15:43:09.362Z</updated>
+    <updated>2016-08-10T17:41:12.784Z</updated>
     
     <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。<br>其中可能涉及到一些linux的基本操作、vmware安装linux等，会在以后一一与大家分享<br>关于固件如何刷入路由器，明天要加班所以今天就不说了，博主有时间会尽快更新的。</p>
+<a id="more"></a>
 <h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><h2 id="设备"><a href="#设备" class="headerlink" title="设备"></a>设备</h2><p>1.一台可刷openwrt的路由器。本文以网件的wndr 4300v1为例。关于哪些设备可刷见官方设备清单</p>
 <blockquote><p>支持设备清单</p><footer><strong>openwrt</strong><cite><a href="http://wiki.openwrt.org/toh/start" target="_blank" rel="external">Supported Devices</a></cite></footer></blockquote>
 <p>2.一台windows操作系统或者linux系统（其实OS X也可以，主要unix和类unix系统博主没啥研究）的计算机</p>
@@ -54,7 +90,7 @@
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。&lt;br&gt;其中可能涉及到一些linux的基本操作、v
+      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;最近稍微研究了下openwrt，算是刚刚入门的菜鸟。今天和大家分享一下编译自己固件的方法。&lt;br&gt;其中可能涉及到一些linux的基本操作、vmware安装linux等，会在以后一一与大家分享&lt;br&gt;关于固件如何刷入路由器，明天要加班所以今天就不说了，博主有时间会尽快更新的。&lt;/p&gt;
     
     </summary>
     
