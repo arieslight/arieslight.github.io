@@ -5,17 +5,17 @@
     
   <url>
     <loc>http://emptycat.com/2016/08/13/Hexo%E6%90%AD%E5%BB%BA%E4%B8%93%E5%B1%9E%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89-%E6%90%AD%E5%BB%BAhexo%E7%8E%AF%E5%A2%83%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%AC%E5%9C%B0/</loc>
-    <lastmod>2016-08-13T12:58:54.241Z</lastmod>
+    <lastmod>2016-08-13T13:02:05.119Z</lastmod>
     <data>
         <display>
         <title>Hexo搭建专属博客（2）-搭建hexo环境并部署到本地</title>
         <pubTime>2016-08-13T12:00:11.000Z</pubTime>
         
+        <tag>IT</tag>
+         
         <tag>Hexo</tag>
          
         <tag>blog</tag>
-         
-        <tag>IT</tag>
          
          
            
@@ -35,11 +35,11 @@
         <title>Hexo搭建专属博客（1）--hexo简介</title>
         <pubTime>2016-08-10T17:03:04.000Z</pubTime>
         
+        <tag>IT</tag>
+         
         <tag>Hexo</tag>
          
         <tag>blog</tag>
-         
-        <tag>IT</tag>
          
          
            
@@ -101,9 +101,9 @@
         <title>HelloWord（测试）</title>
         <pubTime>2016-07-29T10:11:54.000Z</pubTime>
         
-        <tag>IT</tag>
-         
         <tag>TEST</tag>
+         
+        <tag>IT</tag>
          
          
            
