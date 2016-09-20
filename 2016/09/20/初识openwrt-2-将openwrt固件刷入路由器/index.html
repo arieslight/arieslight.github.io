@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css">
 
 
-  <meta name="keywords" content="emptycat, Blog, 扇子先生, MR_FAN">
+  <meta name="keywords" content="openwrt,netgear wndr4300,刷入固件">
 
 
 
@@ -86,15 +86,27 @@
 
 
 
-<meta name="description" content="知名不具">
-<meta property="og:type" content="website">
-<meta property="og:title" content="扇子先生's Blog">
-<meta property="og:url" content="http://emptycat.com/categories/嵌入式Linux/index.html">
+<meta name="description" content="前沿米娜桑，好久不见。之前写过一篇博客是教大家如何编译自己专属的openwrt固件的，至于如何将固件刷入路由器这一篇跳票已久。今天，就来将来填这个坑。本文已网件的wndr4300路由器为例。
+准备工作1.上篇编译的固件.2.网件wndr4300路由器3.装载windows的pc
+刷入固件的方法启动win自带tftp功能打开windows自带的tftp客户端功能。方法如下图：
+开刷1.将固件复制到c">
+<meta property="og:type" content="article">
+<meta property="og:title" content="初识openwrt[2]将openwrt固件刷入路由器">
+<meta property="og:url" content="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/index.html">
 <meta property="og:site_name" content="扇子先生's Blog">
-<meta property="og:description" content="知名不具">
+<meta property="og:description" content="前沿米娜桑，好久不见。之前写过一篇博客是教大家如何编译自己专属的openwrt固件的，至于如何将固件刷入路由器这一篇跳票已久。今天，就来将来填这个坑。本文已网件的wndr4300路由器为例。
+准备工作1.上篇编译的固件.2.网件wndr4300路由器3.装载windows的pc
+刷入固件的方法启动win自带tftp功能打开windows自带的tftp客户端功能。方法如下图：
+开刷1.将固件复制到c">
+<meta property="og:image" content="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/1.png">
+<meta property="og:updated_time" content="2016-09-20T15:23:40.641Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="扇子先生's Blog">
-<meta name="twitter:description" content="知名不具">
+<meta name="twitter:title" content="初识openwrt[2]将openwrt固件刷入路由器">
+<meta name="twitter:description" content="前沿米娜桑，好久不见。之前写过一篇博客是教大家如何编译自己专属的openwrt固件的，至于如何将固件刷入路由器这一篇跳票已久。今天，就来将来填这个坑。本文已网件的wndr4300路由器为例。
+准备工作1.上篇编译的固件.2.网件wndr4300路由器3.装载windows的pc
+刷入固件的方法启动win自带tftp功能打开windows自带的tftp客户端功能。方法如下图：
+开刷1.将固件复制到c">
+<meta name="twitter:image" content="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/1.png">
 
 
 
@@ -115,9 +127,9 @@
 
 
 
-  <link rel="canonical" href="http://emptycat.com/categories/嵌入式Linux/">
+  <link rel="canonical" href="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/">
 
-  <title> 分类: 嵌入式Linux | 扇子先生's Blog </title>
+  <title> 初识openwrt[2]将openwrt固件刷入路由器 | 扇子先生's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -148,7 +160,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left">
+  <div class="container one-collumn sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -276,71 +288,197 @@
           <div id="content" class="content">
             
 
-  <section id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2>
-        嵌入式Linux
-        <small>分类</small>
-      </h2>
-    </div>
-
+  <div id="posts" class="posts-expand">
     
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/" itemprop="url">
-              
-                <span itemprop="name">初识openwrt[2]将openwrt固件刷入路由器</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-09-20T23:07:03+08:00" content="2016-09-20">
-          09-20
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-      
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h1 class="post-title">
-        
-            <a class="post-title-link" href="/2016/07/30/openwrt【1】/" itemprop="url">
-              
-                <span itemprop="name">初识openwrt【1】编译自己专属的固件</span>
-              
-            </a>
-        
-      </h1>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated" datetime="2016-07-30T19:17:21+08:00" content="2016-07-30">
-          07-30
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-    
-  </section>
 
   
+  
 
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                初识openwrt[2]将openwrt固件刷入路由器
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">发表于</span>
+            <time itemprop="dateCreated" datetime="2016-09-20T23:07:03+08:00" content="2016-09-20">
+              2016-09-20
+            </time>
+          </span>
+
+          
+            <span class="post-category">
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/嵌入式Linux/" itemprop="url" rel="index">
+                    <span itemprop="name">嵌入式Linux</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/" class="leancloud_visitors" data-flag-title="初识openwrt[2]将openwrt固件刷入路由器">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">阅读次数 </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <h1 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h1><p>米娜桑，好久不见。之前写过一篇博客是教大家如何编译自己专属的openwrt固件的，至于如何将固件刷入路由器这一篇跳票已久。今天，就来将来填这个坑。<br>本文已网件的wndr4300路由器为例。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>1.上篇编译的固件.<br>2.网件wndr4300路由器<br>3.装载windows的pc</p>
+<h1 id="刷入固件的方法"><a href="#刷入固件的方法" class="headerlink" title="刷入固件的方法"></a>刷入固件的方法</h1><h2 id="启动win自带tftp功能"><a href="#启动win自带tftp功能" class="headerlink" title="启动win自带tftp功能"></a>启动win自带tftp功能</h2><p>打开windows自带的tftp客户端功能。方法如下图：<br><img src="/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/1.png" alt="控制面板-程序-启动或关闭windows功能-勾选tftp" title="控制面板-程序-启动或关闭windows功能-勾选tftp"></p>
+<h2 id="开刷"><a href="#开刷" class="headerlink" title="开刷"></a>开刷</h2><p>1.将固件复制到c盘根目录（不一定得放在这只是为了新手方便，懂的人自然懂，不多解释）<br>2.win键+R键输入cmd回车打开命令行。输入 ping 192.168.1.1 -t<br>3.电脑改固定ip192.168.1.2网关255.255.255.0<br>4.断电，按掉路由器的那个电源开关<br>  用尖针按住路由器后面的复位键，不松手<br>5.通电。等待电源灯从 黄灯变为绿灯然后绿灯一直闪烁，然后松开复位键。<br>6.再开一个命令行，输入cd c:\<br>        输入tftp -i 192.168.1.1 PUT 4300.img(此处的4300为固件的名称，以你的固件名为准)<br>        等待几分钟<br>        当地一个cmd中能持续ping同至少10s以上时说明刷入完成<br>7.直接拔电源插座，然后关掉路由器开关等待5s左右插上插座等待5s左右打开路由器开关（不是必须的但是不这么做有可能刷完开不了5G信号，若无5G信号其实再重启一下也可以）</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=33471935&auto=1&height=66"></iframe>
+      
+    </div>
+
+    <div>
+      
+        
+
+      
+    </div>
+
+    <div>
+      
+        
+  <div style="padding: 10px 0; margin: 20px auto; width: 90%; text-align: center">
+    <div>坚持原创技术分享，您的支持将鼓励我继续创作！</div>
+    <button id="rewardButton" disable="enable" onclick="var qr = document.getElementById('QR'); if (qr.style.display === 'none') {qr.style.display='block';} else {qr.style.display='none'}">
+      <span>赏</span>
+    </button>
+    <div id="QR" style="display: none">
+      
+        <div id="wechat" style="display: inline-block">
+          <img id="wechat_qr" src="/images/wechatpay.png" alt="MR_FAN WeChat Pay">
+          <p>微信打赏</p>
+        </div>
+      
+      
+        <div id="alipay" style="display: inline-block">
+          <img id="alipay_qr" src="/images/alipay.png" alt="MR_FAN Alipay">
+          <p>支付宝打赏</p>
+        </div>
+      
+    </div>
+  </div>
+
+
+      
+    </div>
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/openwrt-刷入固件/" rel="tag">#-openwrt -刷入固件</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/13/Hexo搭建专属博客（2）-搭建hexo环境并部署到本地/" rel="next" title="Hexo搭建专属博客（2）-搭建hexo环境并部署到本地">
+                <i class="fa fa-chevron-left"></i> Hexo搭建专属博客（2）-搭建hexo环境并部署到本地
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </article>
+
+
+
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/" data-title="初识openwrt[2]将openwrt固件刷入路由器" data-content="" data-url="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/">
+  <div class="ds-share-inline">
+    <ul class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
 
           </div>
@@ -348,6 +486,13 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/" data-title="初识openwrt[2]将openwrt固件刷入路由器" data-url="http://emptycat.com/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -367,8 +512,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image" src="/images/avatar.png" alt="MR_FAN">
           <p class="site-author-name" itemprop="name">MR_FAN</p>
@@ -443,6 +597,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#前沿"><span class="nav-number">1.</span> <span class="nav-text">前沿</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#准备工作"><span class="nav-number">2.</span> <span class="nav-text">准备工作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#刷入固件的方法"><span class="nav-number">3.</span> <span class="nav-text">刷入固件的方法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#启动win自带tftp功能"><span class="nav-number">3.1.</span> <span class="nav-text">启动win自带tftp功能</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#开刷"><span class="nav-number">3.2.</span> <span class="nav-text">开刷</span></a></li></ol></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -546,6 +711,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 

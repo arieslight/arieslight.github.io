@@ -4,13 +4,23 @@
   
     
     <entry>
+      <title><![CDATA[初识openwrt[2]将openwrt固件刷入路由器]]></title>
+      <url>http://emptycat.com/2016/09/20/%E5%88%9D%E8%AF%86openwrt-2-%E5%B0%86openwrt%E5%9B%BA%E4%BB%B6%E5%88%B7%E5%85%A5%E8%B7%AF%E7%94%B1%E5%99%A8/</url>
+      <content type="html"><![CDATA[<h1 id="前沿"><a href="#前沿" class="headerlink" title="前沿"></a>前沿</h1><p>米娜桑，好久不见。之前写过一篇博客是教大家如何编译自己专属的openwrt固件的，至于如何将固件刷入路由器这一篇跳票已久。今天，就来将来填这个坑。<br>本文已网件的wndr4300路由器为例。</p>
+<h1 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h1><p>1.上篇编译的固件.<br>2.网件wndr4300路由器<br>3.装载windows的pc</p>
+<h1 id="刷入固件的方法"><a href="#刷入固件的方法" class="headerlink" title="刷入固件的方法"></a>刷入固件的方法</h1><h2 id="启动win自带tftp功能"><a href="#启动win自带tftp功能" class="headerlink" title="启动win自带tftp功能"></a>启动win自带tftp功能</h2><p>打开windows自带的tftp客户端功能。方法如下图：<br><img src="/2016/09/20/初识openwrt-2-将openwrt固件刷入路由器/1.png" alt="控制面板-程序-启动或关闭windows功能-勾选tftp" title="控制面板-程序-启动或关闭windows功能-勾选tftp"></p>
+<h2 id="开刷"><a href="#开刷" class="headerlink" title="开刷"></a>开刷</h2><p>1.将固件复制到c盘根目录（不一定得放在这只是为了新手方便，懂的人自然懂，不多解释）<br>2.win键+R键输入cmd回车打开命令行。输入 ping 192.168.1.1 -t<br>3.电脑改固定ip192.168.1.2网关255.255.255.0<br>4.断电，按掉路由器的那个电源开关<br>  用尖针按住路由器后面的复位键，不松手<br>5.通电。等待电源灯从 黄灯变为绿灯然后绿灯一直闪烁，然后松开复位键。<br>6.再开一个命令行，输入cd c:\<br>        输入tftp -i 192.168.1.1 PUT 4300.img(此处的4300为固件的名称，以你的固件名为准)<br>        等待几分钟<br>        当地一个cmd中能持续ping同至少10s以上时说明刷入完成<br>7.直接拔电源插座，然后关掉路由器开关等待5s左右插上插座等待5s左右打开路由器开关（不是必须的但是不这么做有可能刷完开不了5G信号，若无5G信号其实再重启一下也可以）</p>
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width="330" height="86" src="http://music.163.com/outchain/player?type=2&id=33471935&auto=1&height=66"></iframe>]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hexo搭建专属博客（2）-搭建hexo环境并部署到本地]]></title>
       <url>http://emptycat.com/2016/08/13/Hexo%E6%90%AD%E5%BB%BA%E4%B8%93%E5%B1%9E%E5%8D%9A%E5%AE%A2%EF%BC%882%EF%BC%89-%E6%90%AD%E5%BB%BAhexo%E7%8E%AF%E5%A2%83%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0%E6%9C%AC%E5%9C%B0/</url>
       <content type="html"><![CDATA[<p><hr></p>
 <h1 id="搭建Hexo环境"><a href="#搭建Hexo环境" class="headerlink" title="搭建Hexo环境"></a>搭建Hexo环境</h1><p>安装Hexo相当简单，但在安装前，您必须搭建环境。本文以windows下为例。</p>
 <h2 id="安装前提"><a href="#安装前提" class="headerlink" title="安装前提"></a>安装前提</h2><p>检查电脑中是否已安装下列应用程序：<br><a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a><br><a href="https://git-scm.com/" target="_blank" rel="external">Git</a><br>如果已安装则跳过安装前提小结直接从安装Hexo继续看。如果未安装，请安装。</p>
 <p></p><h3>安装Node.js</h3><br>下载<a href="https://nodejs.org/en/" target="_blank" rel="external">Node.js</a>并安装。<p></p>
-<p></p><h3>安装Git</h3><br>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git</a>并安装。<p></p>
+<p></p><h3>安装Git</h3><br>下载<a href="https://git-scm.com/download/win" target="_blank" rel="external">Git</a>并安装。<br><a id="more"></a><p></p>
 <h1 id="安装Hexo"><a href="#安装Hexo" class="headerlink" title="安装Hexo"></a>安装Hexo</h1><p>部署好前提环境后，则可使用npm安装Hexo。<br>在桌面或任意文件夹中，鼠标单击右键，在弹出的菜单中你会发现安装Git后多了Git GUI Here和Git Bash Here两项。<br><img src="/2016/08/13/Hexo搭建专属博客（2）-搭建hexo环境并部署到本地/menu.png" alt="右击出现的menu" title="右击出现的menu"><br>点击Git Bash Here，出现如下窗口。<br><img src="/2016/08/13/Hexo搭建专属博客（2）-搭建hexo环境并部署到本地/Bash.png" alt="Bash窗口" title="Bash窗口"><br>在Bash命令行中输入命令如下：<br><figure class="highlight plain"><figcaption><span>使用npm安装Hexo</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install -g hexo-cli</div></pre></td></tr></table></figure></p>
 <h1 id="部署Hexo到本地计算机"><a href="#部署Hexo到本地计算机" class="headerlink" title="部署Hexo到本地计算机"></a>部署Hexo到本地计算机</h1><h2 id="执行命令建站"><a href="#执行命令建站" class="headerlink" title="执行命令建站"></a>执行命令建站</h2><figure class="highlight plain"><figcaption><span>&lt;folder&gt;为站点资源所在文件夹名</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">$ hexo init &lt;folder&gt;</div><div class="line">$ cd &lt;folder&gt;</div><div class="line">$ npm install</div></pre></td></tr></table></figure>
 <h2 id="不习惯命令行的朋友看这里"><a href="#不习惯命令行的朋友看这里" class="headerlink" title="不习惯命令行的朋友看这里"></a>不习惯命令行的朋友看这里</h2><p>如果不习惯用命令的话，则选择硬盘任意位置新建一个文件夹（推荐全英文路径避免日后遇到未知问题）。如在D:/路径下新建文件夹Hexo.<br>打开Hexo文件夹，右击出现菜单点击Git Bash Here。在Bash命令行中输入如下命令：<br><figure class="highlight plain"><figcaption><span>建站命令</span></figcaption><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ npm install</div></pre></td></tr></table></figure></p>
